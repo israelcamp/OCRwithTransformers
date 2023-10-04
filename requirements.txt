@@ -1,0 +1,11 @@
+transformers 
+imagecorruptions
+pytorch-ignite
+neptune
+sentencepiece
+evaluate
+jiwer
+srsly
+imgaug
+pydantic
+albumentations

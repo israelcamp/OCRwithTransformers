@@ -1,14 +1,10 @@
-from typing import Union, List
+from typing import List
 
 import torch
 
-ListOfStrings = List[str]
-ListOfInts = List[int]
 
-ListOfIntsOrstrings = Union[ListOfInts, ListOfStrings]
-
-class GreedyCTCDecoder(torch.nn.Module):
-    def __init__(self,  blank=0):
+class GreedyDecoder(torch.nn.Module):
+    def __init__(self, blank=0):
         super().__init__()
         self.blank = blank
 

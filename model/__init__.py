@@ -1,1 +1,0 @@
-from .tr import CNNTr

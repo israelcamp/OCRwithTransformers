@@ -1,0 +1,21 @@
+
+[project]
+name = "trainer"
+version = "1.0.0"
+authors = [
+    {name = "Israel Campiotti", email = "israelcampiotti@gmail.com"},
+]
+description = "OCR with Transformers and CTC"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python",
+]
+dynamic = ["dependencies"]
+
+
+[tool.setuptools.dynamic]
+dependencies = {file = ["requirements.txt"]}
+
+[tool.setuptools.packages.find]
+include = ["src*"]
+
